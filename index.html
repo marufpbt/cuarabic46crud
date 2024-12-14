@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Center-aligned buttons -->
+    <div class="buttons">
+      <button id="registrationButton">Registration</button>
+      <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Registration Form Wrapped in a Card -->
+    <div id="registrationForm" class="form hidden">
+      <div class="form-card">
+        <h2>Register User</h2>
+        <form id="userForm">
+          <input type="file" id="avatar" accept="image/*" required />
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="text" id="number" placeholder="Phone Number" required />
+          <input type="text" id="jobTitle" placeholder="Job Title" required />
+          <input type="text" id="company" placeholder="Company" required />
+          <input type="text" id="district" placeholder="District" required />
+          <input type="text" id="thana" placeholder="Thana" required />
+          <button type="button" id="addUserButton">Add User</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Search Form -->
+    <div id="searchContainer" class="form hidden">
+      <h2>Search User</h2>
+      <input type="text" id="searchInput" placeholder="Search by name or job title" />
+      <button id="searchSubmitButton">Search</button>
+    </div>
+
+    <!-- User Cards -->
+    <div id="userCards" class="user-cards">
+      <!-- User cards will be dynamically generated here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>  
